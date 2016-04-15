@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_AlternLayout.cshtml";
+}
+
+
+@section footer{
+    <div class="alert alert-warning">El footer de @@JuanKRuiz</div>
+}
+
+<div class="label label-info col-md-4"><strong>Pictures:</strong>@ViewBag.PictureCount</div>
+<div class="label label-info col-md-4"><strong>Faces:</strong>@ViewBag.FaceCount</div>
+<div class="label label-info col-md-4"><strong>Emotions:</strong>@ViewBag.EmotionCount</div>
+
+
+@section css{
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+}
+
+@section scripts
+{
+<script src="~/Scripts/bootstrap.min.js"></script>
+}

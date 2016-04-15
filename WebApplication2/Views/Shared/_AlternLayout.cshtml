@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Esquema alterno</title>
+    @RenderSection("css", required: false)
+</head>
+<body>
+    <div> 
+        <h1>El contenido inicia aquí</h1>
+        @RenderBody()
+        <h1>El contenido termina aquí</h1>
+    </div>
+
+    <div id="footer">
+        @RenderSection("footer", required: true)
+    </div>
+</body>
+    @RenderSection("scripts", required: false)
+</html>

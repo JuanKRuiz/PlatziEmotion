@@ -1,0 +1,33 @@
+﻿@model  WebApplication2.Models.Home
+
+@{
+    ViewBag.Title = "View";
+    ViewBag.Footer = Model.Footer;
+}
+
+<h2>@Model.WelcomeMessage </h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="color-swatch brand-primary"></div>
+        <a href="@Url.Action("Index", "EmoPictures")
+" class="btn btn-danger btn-lg active">Pictures</a>
+    </div>
+    <div class="col-md-4  ">
+        <a href="@Url.Action("Index", "EmoFaces")" class="btn btn-success btn-lg active">Faces</a>
+    </div>
+    <div class="col-md-4 ">
+        <a href="@Url.Action("Index", "EmoEmotions")" class="btn btn-info btn-lg active">Emotions</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2">
+        @Html.ActionLink("Show Stats", "MostrarStats")
+    </div>
+    <div class="col-sm-2">
+        @Html.ActionLink("Show Raw Stats", "MostrarStatsRaw")
+    </div>
+</div>
+
+
+

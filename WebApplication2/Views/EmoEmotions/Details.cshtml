@@ -1,0 +1,42 @@
+﻿@model WebApplication2.Models.EmoEmotion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmoEmotion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Face.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Face.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmotionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmotionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Score)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
