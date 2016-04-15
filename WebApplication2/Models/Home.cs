@@ -9,6 +9,6 @@ namespace WebApplication2.Models
     public class Home
     {
         public string WelcomeMessage { get; set; } = "Reconocedor de emociones";
-        public string Footer { get; set; } = "Created by JuanK";
+        public string Footer { get; set; } = "Created by JuanKRuiz";
     }
 }
